@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #1a1f36;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+  }
+  body {
+        min-height: 100%;
+        background-image: url(/src/Images/hero-media-illustration-dark.svg);
+        background-size: cover;
+      
+        .eachCell{
+            background-color: white;
+            width: 100%;
+
+            &:hover{
+                background-color: yellow;
+            }
+        }
+
+        .grid-container {
+            display: grid;
+            max-width: 700px;
+            margin: 0 auto;
+        
+            .grid-item {
+                background-color: rgba(255,255,255, 0.7);
+                border: 1px solid rgba(0, 0, 0, 0.7);
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+                
+                &:hover{
+                    cursor: pointer;
+                }
+                &::before{
+                    content: "";
+                    display: inline-block;
+                    width: 1px;
+                    height: 0;
+                    padding-bottom: calc(100%);
+                }
+            }
+            .selectedCell{
+                background-color: greenyellow;
+            }
+        }
+
+        .AppContainer{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            padding-top: 3rem;
+            height: 100vh;
+
+            .itemForm{
+                flex-grow: 2;
+            }
+            .itemGrid{
+                flex-grow: 5;
+            }
+            
+            .box-background {
+                background-color: #7fd3ed;
+            }
+            .padding-bottom--24 {
+                padding-bottom: 24px;
+            }
+            .padding-horizontal--48 {
+                padding: 48px;
+            }
+            .padding-bottom--15 {
+                padding-bottom: 15px;
+            }
+
+            .formbg {
+                margin: 0px auto;
+                width: 100%;
+                max-width: 448px;
+                background: white;
+                border-radius: 4px;
+                box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+            }
+            span {
+                display: block;
+                font-size: 20px;
+                line-height: 28px;
+                color: #1a1f36;
+            }
+            label {
+                margin-bottom: 10px;
+            }
+            .grid--50-50 {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                align-items: center;
+            }
+
+            .field input {
+                font-size: 16px;
+                line-height: 28px;
+                padding: 8px 16px;
+                width: 100%;
+                min-height: 44px;
+                border: unset;
+                border-radius: 4px;
+                outline-color: rgba(84, 105, 212, 0.5);
+                background-color: rgb(255, 255, 255);
+                box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                            rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                            rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                            rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+                            rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                            rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                            rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+            }
+
+            .result {
+                font-size: 16px;
+                line-height: 28px;
+                padding: 8px 16px;
+                width: 100%;
+                min-height: 44px;
+                border: unset;
+                border-radius: 4px;
+                background-color: rgb(84, 105, 212);
+                color: #fff;
+                font-weight: 600;
+
+                strong{
+                    color: #fff;
+                    font-size: 25px;
+                }
+            }
+            .footer-link span {
+                font-size: 14px;
+                text-align: center;
+            }
+            .errorContainer{
+                color: red;
+                font-weight: 600;
+                font-size: 15px;
+            }
+        }
+  }

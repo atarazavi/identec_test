@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #1a1f36;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+}
+
+body {
+  min-height: 100%;
+  background-image: url(/src/Images/hero-media-illustration-dark.svg);
+  background-size: cover;
+}
+
+body .eachCell {
+  background-color: white;
+  width: 100%;
+}
+
+body .eachCell:hover {
+  background-color: yellow;
+}
+
+body .grid-container {
+  display: -ms-grid;
+  display: grid;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+body .grid-container .grid-item {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+body .grid-container .grid-item:hover {
+  cursor: pointer;
+}
+
+body .grid-container .grid-item::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 0;
+  padding-bottom: calc(100%);
+}
+
+body .grid-container .selectedCell {
+  background-color: greenyellow;
+}
+
+body .AppContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 3rem;
+  height: 100vh;
+}
+
+body .AppContainer .itemForm {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+body .AppContainer .itemGrid {
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+}
+
+body .AppContainer .box-background {
+  background-color: #7fd3ed;
+}
+
+body .AppContainer .padding-bottom--24 {
+  padding-bottom: 24px;
+}
+
+body .AppContainer .padding-horizontal--48 {
+  padding: 48px;
+}
+
+body .AppContainer .padding-bottom--15 {
+  padding-bottom: 15px;
+}
+
+body .AppContainer .formbg {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 448px;
+  background: white;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+          box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+}
+
+body .AppContainer span {
+  display: block;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1a1f36;
+}
+
+body .AppContainer label {
+  margin-bottom: 10px;
+}
+
+body .AppContainer .grid--50-50 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .AppContainer .field input {
+  font-size: 16px;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 44px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgba(84, 105, 212, 0.5);
+  background-color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+          box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+body .AppContainer .result {
+  font-size: 16px;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 44px;
+  border: unset;
+  border-radius: 4px;
+  background-color: #5469d4;
+  color: #fff;
+  font-weight: 600;
+}
+
+body .AppContainer .result strong {
+  color: #fff;
+  font-size: 25px;
+}
+
+body .AppContainer .footer-link span {
+  font-size: 14px;
+  text-align: center;
+}
+
+body .AppContainer .errorContainer {
+  color: red;
+  font-weight: 600;
+  font-size: 15px;
+}
+/*# sourceMappingURL=Cell.css.map */
